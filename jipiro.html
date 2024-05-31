@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Parque Jipiro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Fondo suave para el cuerpo */
+        }
+        header {
+            background-color: #8be6bc;
+            color: rgb(0, 0, 0);
+            padding: 1em;
+            text-align: center;
+        }
+        section {
+            margin: 1em auto;
+            max-width: 900px; /* Ancho máximo para las secciones */
+            background-color: #ffffff; /* Fondo blanco para las secciones */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para las secciones */
+        }
+        .form-section {
+            background-color: #d2dfdf;
+            max-width: 530px;
+            margin: auto;
+            padding: 1em;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .galeria {
+            text-align: center;
+        }
+        .galeria img {
+            width: 330px; /* Ancho deseado */
+            height: 200px; /* Altura deseada */
+            object-fit: cover; /* Mantiene la relación de aspecto */
+            margin: 5px; /* Espacio entre las imágenes */
+        }
+        
+        #video {
+            text-align: center;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Parque Jipiro</h1>
+</header>
+<section id="descripcion">
+    <p>El Parque Jipiro me gusta porque es un espacio natural donde la diversión y la naturaleza se combinan para ofrecer una experiencia inolvidable. Con amplias zonas verdes, áreas de picnic, y una variedad de atracciones, es el lugar perfecto para pasar el día con la familia y amigos.</p>
+</section>
+<section id="galeria" class="galeria">
+    <h2>Galería de artes</h2>
+    <img src="https://www.loja.gob.ec/files/noticias/2017/12/parque.png" alt="">
+    <img src="https://s0.wklcdn.com/image_154/4630841/31501268/20240901Master.jpg" alt="">
+    <img src="https://pbs.twimg.com/media/DP9pyODX0AEvpl8.jpg" alt="">
+    <img src="https://travelandfood.online/wp-content/uploads/2019/04/Parque-Jipiro-Loja.jpg" alt="">
+</section>
+<section id="video">
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DsLmlGS0dRA?si=mZj596vuj5eSiJHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="contacto" class="form-section">
+    <h2>Formulario</h2>
+    <form action="/enviar" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+</body>
+</html>
